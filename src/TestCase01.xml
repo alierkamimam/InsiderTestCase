@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/Users/imama/workspace/Insider_AliErkamImam/src/test">
+        <classes>
+            <class name="tests.TestCase01">
+                <methods>
+                    <include name="TestCase_01_GoTo_Insider_Home_Page"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

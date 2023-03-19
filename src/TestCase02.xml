@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/imama/workspace/Insider_AliErkamImam/src/test/java/tests/TestCase02.java">
+        <classes>
+            <class name="tests.TestCase02">
+                <methods>
+                    <include name="Test_Case02"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
