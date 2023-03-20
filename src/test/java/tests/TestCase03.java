@@ -1,15 +1,11 @@
 package tests;
 
 
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import pages.CareersPage;
-import pages.OpenPositionsPage;
 import utilities.BrowserUtils;
+import utilities.Driver;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class TestCase03 extends BaseTest {
     SoftAssert softAssert = new SoftAssert();
@@ -33,10 +29,24 @@ public class TestCase03 extends BaseTest {
         pages.getOPEN_POSITIONS_PAGE().clickFilterByLocationDropDown("Istanbul, Turkey");
         pages.getOPEN_POSITIONS_PAGE().clickFilterByDepartmentDropDown("Quality Assurance");
         BrowserUtils.wait(5);
-        pages.getOPEN_POSITIONS_PAGE().elementIsDisplayed();
+        pages.getOPEN_POSITIONS_PAGE().JobListIsDisplayed();
         BrowserUtils.wait(3);
         softAssert.assertTrue(pages.getOPEN_POSITIONS_PAGE().verifyElementPositionsText("Quality Assurance"));
+        softAssert.assertTrue(pages.getOPEN_POSITIONS_PAGE().verifyElementDepartmentText("Quality Assurance"));
+        softAssert.assertTrue(pages.getOPEN_POSITIONS_PAGE().verifyElementLocationText("Istanbul, Turkey"));
+
+
+        pages.getOPEN_POSITIONS_PAGE().ApplyNowButtonIsDisplayed();
+        BrowserUtils.wait(2);
+        pages.getOPEN_POSITIONS_PAGE().clickApplyNowButton();
+        BrowserUtils.wait(5);
+        BrowserUtils.switchToTab("Insider.-Software Quality Assurance Engineer (Remote)");
+
+        softAssert.assertEquals(Driver.getDriver().getCurrentUrl(), "https://jobs.lever.co/useinsider/0ba4065b-955a-4661-ad4a-f32479f63757");
+        softAssert.assertEquals(Driver.getDriver().getTitle(), "Insider. - Software Quality Assurance Engineer (Remote)");
+
 
         softAssert.assertAll();
+
     }
 }

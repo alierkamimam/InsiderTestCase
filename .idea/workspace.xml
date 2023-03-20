@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23e6c61d-6582-4ce2-ab24-2bf27b105b5f" name="Changes" comment="added">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/OpenPositionsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/QualityAssurancePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LeverAppPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/CareersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/CareersPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestCase02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestCase02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/OpenPositionsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/OpenPositionsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/TestCase03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/TestCase03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/BrowserUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Pages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Pages.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +71,7 @@
       <recent name="C:\Users\imama\workspace\Insider_AliErkamImam\src\test" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TestCase02.Test_Case02 (1)">
+  <component name="RunManager" selected="TestNG.TestCase03.TestCase03">
     <configuration name="TestCase01.TestCase_01_GoTo_Insider_Home_Page" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Insider_AliErkamImam" />
       <shortenClasspath name="NONE" />
@@ -161,18 +158,31 @@
     </configuration>
     <configuration name="TestCase03.TestCase03" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="com.insider.ui.test.automation" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.TestCase03" />
       <option name="METHOD_NAME" value="TestCase03" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
-      <listeners />
+      <listeners>
+        <listener class="org.testng.reporters.EmailableReporter" />
+        <listener class="org.testng.reporters.FailedReporter" />
+      </listeners>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,8 +220,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestCase02.Test_Case02 (1)" />
         <item itemvalue="TestNG.TestCase03.TestCase03" />
+        <item itemvalue="TestNG.TestCase02.Test_Case02 (1)" />
         <item itemvalue="TestNG.TestCase02.Test_Case02" />
         <item itemvalue="TestNG.TestCase02" />
         <item itemvalue="TestNG.TestCase01.TestCase_01_GoTo_Insider_Home_Page" />
@@ -229,7 +239,7 @@
       <workItem from="1679210979677" duration="27631000" />
       <workItem from="1679239772439" duration="5103000" />
       <workItem from="1679244899968" duration="10036000" />
-      <workItem from="1679298316674" duration="12731000" />
+      <workItem from="1679298316674" duration="15932000" />
     </task>
     <task id="LOCAL-00001" summary="added">
       <created>1679255982809</created>
@@ -238,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679255982809</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added">
+      <created>1679311066254</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679311066255</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

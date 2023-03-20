@@ -28,6 +28,9 @@ public class OpenPositionsPage extends BasePage {
     @FindBy(xpath = "//div[@class='position-location text-large']")
     private List<WebElement> location;
 
+    @FindBy(xpath = "//a[@class='btn btn-navy rounded pt-2 pr-5 pb-2 pl-5']")
+    private WebElement applyNowButton;
+
 
 
 
@@ -42,10 +45,17 @@ public class OpenPositionsPage extends BasePage {
 
     }
 
-    public void elementIsDisplayed() {
+    public void JobListIsDisplayed() {
         BrowserUtils.verifyElementDisplayed(jobList, "element is not displayed");
     }
+    public void ApplyNowButtonIsDisplayed() {
+        BrowserUtils.hoverOver(applyNowButton);
+        BrowserUtils.verifyElementDisplayed(applyNowButton, "element is not displayed");
+    }
 
+    public void clickApplyNowButton(){
+        applyNowButton.click();
+    }
 
 
     public  boolean verifyElementPositionsText(String text) {
