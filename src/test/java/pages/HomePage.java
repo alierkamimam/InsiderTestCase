@@ -10,25 +10,25 @@ public class HomePage extends BasePage {
     private WebElement platform_Button;
 
     @FindBy(xpath = "(//a[@id='mega-menu-1'])[2]")
-    private WebElement Industries_Button;
+    private WebElement industries_Button;
 
     @FindBy(xpath = "(//a[@id='mega-menu-1'])[3]")
-    private WebElement UseCases_Button;
+    private WebElement useCases_Button;
 
     @FindBy(xpath = "(//a[@id='mega-menu-1'])[4]")
-    private WebElement Resources_Button;
+    private WebElement resources_Button;
 
     @FindBy(xpath = "(//a[@id='mega-menu-1'])[5]")
-    private WebElement Blog_Button;
+    private WebElement blog_Button;
 
     @FindBy(xpath = "(//a[@id='mega-menu-1'])[6]")
-    private WebElement More_Button;
+    private WebElement more_Button;
 
     @FindBy(xpath = "//span[.='Product Demo Hub']")
     private WebElement productDemoHub_Button;
 
     @FindBy(xpath = "//h5[.='Careers']")
-    private WebElement Careers_Button;
+    private WebElement careers_Button;
 
     @FindBy(xpath = "(//h1[@data-animate='fade-in'])[1]")
     private WebElement homePageMessage;
@@ -42,9 +42,9 @@ public class HomePage extends BasePage {
 
 
     public void clickMoreButtonAndClickCareersButton(){
-        More_Button.click();
+        more_Button.click();
         BrowserUtils.wait(2);
-        Careers_Button.click();
+        careers_Button.click();
     }
     public String getMessage(){
       return  homePageMessage.getText();

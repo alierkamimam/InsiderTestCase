@@ -28,7 +28,7 @@ public class OpenPositionsPage extends BasePage {
     @FindBy(xpath = "//div[@class='position-location text-large']")
     private List<WebElement> location;
 
-    @FindBy(xpath = "//a[@class='btn btn-navy rounded pt-2 pr-5 pb-2 pl-5']")
+    @FindBy(xpath = "(//a[@class='btn btn-navy rounded pt-2 pr-5 pb-2 pl-5'])[1]")
     private WebElement applyNowButton;
 
 

@@ -21,8 +21,6 @@ public class CareersPage extends BasePage {
     @FindBy(xpath = "(//*[@class='text-center mb-4 mb-xl-5'])[3]")
     private WebElement productEngineering;
 
-    @FindBy(xpath = "//a[@id='wt-cli-accept-all-btn']")
-    private WebElement cookies;
 
     @FindBy(xpath = "//h3[contains(text(),'Our Locations')]")
     private WebElement ourLocations;
@@ -39,12 +37,21 @@ public class CareersPage extends BasePage {
     @FindBy(xpath = "//h3[text()='Quality Assurance']")
     private WebElement qualityAssurance;
 
+    @FindBy(xpath = "//section[@id='career-find-our-calling']")
+    private WebElement teamsBlock;
+
+    @FindBy(xpath = "//section[@data-id='a8e7b90']")
+    private WebElement lifeAtInsiderBlock;
 
 
+    public boolean teamsBlockIsDisplayed() {
+        return teamsBlock.isDisplayed();
 
+    }
+    public boolean lifeAtInsiderBlockIsDisplayed() {
+        return teamsBlock.isDisplayed();
 
-
-
+    }
 
 
     public String getCustomerSuccessText() {
@@ -59,9 +66,6 @@ public class CareersPage extends BasePage {
         return productEngineering.getText();
     }
 
-    public void acceptCookies() {
-        cookies.click();
-    }
 
     public String getOurLocationText() {
         return ourLocations.getText();
@@ -70,26 +74,26 @@ public class CareersPage extends BasePage {
     public String getLifeAtInsiderText() {
         return lifeAtInsiderText.getText();
     }
-    public void clickSeeAllTeamsButton(){
+
+    public void clickSeeAllTeamsButton() {
         seeAllTeamsButton.click();
     }
-    public void clickQualityAssuranceButton(){
+
+    public void clickQualityAssuranceButton() {
         qualityAssurance.click();
     }
 
 
-
-
     public boolean isDisplayedLocation(String location) {
         for (int i = 0; i < locations.size(); i++) {
-            if (locations.get(i).getText().contains(location)){
+            if (locations.get(i).getText().contains(location)) {
                 return true;
             }
         }
-      return false;
-        }
-
+        return false;
     }
+
+}
 
 
 

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
-import java.util.List;
+
 
 import static org.testng.AssertJUnit.assertTrue;
 
@@ -75,6 +75,18 @@ public class BrowserUtils {
         js.executeScript("window.scrollBy(0," + value + ")");
 
     }
+    /**
+     * scroll up by given value
+     *
+     * @param value
+     */
+    public static void scrollUp(String value) {
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("window.scrollBy(0,-" + value + ")");
+
+    }
+
+
 
     /**
      * Performs a hover over action on the specified web element.
