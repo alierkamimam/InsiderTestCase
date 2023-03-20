@@ -1,11 +1,13 @@
 package pages;
 
+import lombok.extern.slf4j.Slf4j;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utilities.BrowserUtils;
 
 import java.util.List;
 
-
+@Slf4j
 public class CareersPage extends BasePage {
 
     @FindBy(xpath = "//p[text() = 'New York']\"")
@@ -38,10 +40,12 @@ public class CareersPage extends BasePage {
     private WebElement qualityAssurance;
 
 
-    public void locationBlocksIsVisible() {
-        locationBlock.isDisplayed();
 
-    }
+
+
+
+
+
 
     public String getCustomerSuccessText() {
         return customerSuccess.getText();
@@ -74,15 +78,18 @@ public class CareersPage extends BasePage {
     }
 
 
+
+
     public boolean isDisplayedLocation(String location) {
-        if (locations.contains(location)) {
-            return true;
-        } else
-            return false;
+        for (int i = 0; i < locations.size(); i++) {
+            if (locations.get(i).getText().contains(location)){
+                return true;
+            }
+        }
+      return false;
+        }
+
     }
-
-
-}
 
 
 
