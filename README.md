@@ -102,4 +102,4 @@ I pay close attention to coding standards, especially naming conventions. Classe
 ``methods``:acceptCookies(): this methods only used accept to cookies,not for any other functionality.
 
 # I N S I D E R - W E B -P A G E
-<img src="https://www.girisimhaberleri.com/wp-content/uploads/2022/05/main.png" width="320" height="180">
+<img src="https://cdn.webrazzi.com/uploads/2018/09/insider-logo_hd.jpg"  width="320" height="180">
