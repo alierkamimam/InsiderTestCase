@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utilities.Listener"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/imama/workspace/Insider_AliErkamImam/src/test/java/tests/End2End.java">
+        <classes>
+            <class name="tests.End2End">
+                <methods>
+                    <include name="insiderWebPageTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -36,11 +36,6 @@ public class HomePage extends BasePage {
     @FindBy(xpath = "//a[@id='wt-cli-accept-all-btn']")
     private WebElement cookies;
 
-
-
-
-
-
     public void clickMoreButtonAndClickCareersButton(){
         more_Button.click();
         BrowserUtils.wait(2);
