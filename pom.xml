@@ -27,13 +27,11 @@
         <slf4j.version>2.0.6</slf4j.version>
         <logback.classic.version>1.4.5</logback.classic.version>
         <extentreport.version>4.1.3</extentreport.version>
-
         <!-- Plugin Versions  -->
         <maven.surefire.plugin.version>3.0.0-M9</maven.surefire.plugin.version>
-        <maven.cucumber.reporting.plugin.version>5.7.4</maven.cucumber.reporting.plugin.version>
-
 
     </properties>
+
     <dependencies>
         <!-- Selenium WebDriver -->
         <dependency>
@@ -87,5 +85,17 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.spring.javaformat</groupId>
+                <artifactId>spring-javaformat-maven-plugin</artifactId>
+                <version>0.0.38</version>
+            </plugin>
+        </plugins>
+    </build>
+
+
 
 </project>

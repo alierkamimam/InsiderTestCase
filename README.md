@@ -29,14 +29,6 @@ In order to start the tests by using Maven in your local computer, you need to f
 2) Open the command prompt and cd until the project root directory
 3) Run the following command in the command prompt: mvn test
 ```
-## Overview
-
-
-
-
-
-
-
 
 ## Tools
 ``Java``- My framework is written using Java language, 17 version.  
