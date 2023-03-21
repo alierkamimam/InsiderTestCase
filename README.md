@@ -2,7 +2,6 @@
 
 ## Copyright/Licensing Information : READ LICENSE
 
----
 
 ### Project source can be downloaded from :https://github.com/alierkamimam/InsiderTestCase
 
@@ -30,3 +29,17 @@ In order to start the tests by using Maven in your local computer, you need to f
 2) Open the command prompt and cd until the project root directory
 3) Run the following command in the command prompt: mvn test
 ```
+## Overview
+
+
+
+
+
+
+
+
+## Tools
+``Java``- My framework is written using Java language, 17 version.  
+
+``Maven``- My framework is a Maven project, which is a Java build application tool that I use to manage dependencies and run tests from the endpoint as Maven 
+goals. This allows me to streamline the process of managing dependencies and running tests.
