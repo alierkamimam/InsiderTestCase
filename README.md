@@ -101,5 +101,5 @@ I pay close attention to coding standards, especially naming conventions. Classe
 
 ``methods``:acceptCookies(): this methods only used accept to cookies,not for any other functionality.
 
-# I N S I D E R - W E B -P A G E 
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fuseinsider&psig=AOvVaw1w96Wkpqmd-WvVE1R4cmkc&ust=1679502882728000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPiOuve57f0CFQAAAAAdAAAAABAI" width="320" height="180">
+# I N S I D E R - W E B -P A G E
+<img src="https://www.girisimhaberleri.com/wp-content/uploads/2022/05/main.png" width="320" height="180">
