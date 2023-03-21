@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import utilities.BrowserUtils;
 
 public class QualityAssurancePage extends BasePage {
 
@@ -10,6 +11,8 @@ public class QualityAssurancePage extends BasePage {
 
 
     public void clickSeeAllQaJobs(){
+        BrowserUtils.wait(1);
+        BrowserUtils.waitForClickability(seeAllQaJobsButton,3);
         seeAllQaJobsButton.click();
     }
 

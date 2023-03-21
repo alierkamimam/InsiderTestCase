@@ -48,6 +48,7 @@ public class CareersPage extends BasePage {
         return teamsBlock.isDisplayed();
 
     }
+
     public boolean lifeAtInsiderBlockIsDisplayed() {
         return teamsBlock.isDisplayed();
 
@@ -76,10 +77,14 @@ public class CareersPage extends BasePage {
     }
 
     public void clickSeeAllTeamsButton() {
+        BrowserUtils.wait(1);
+        BrowserUtils.waitForVisibility(seeAllTeamsButton, 5);
         seeAllTeamsButton.click();
     }
 
     public void clickQualityAssuranceButton() {
+        BrowserUtils.wait(2);
+        BrowserUtils.waitForClickability(qualityAssurance, 3);
         qualityAssurance.click();
     }
 

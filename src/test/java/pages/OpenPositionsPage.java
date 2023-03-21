@@ -46,11 +46,13 @@ public class OpenPositionsPage extends BasePage {
     }
 
     public void JobListIsDisplayed() {
+        BrowserUtils.waitForVisibility(jobList,5);
         BrowserUtils.verifyElementDisplayed(jobList, "element is not displayed");
     }
     public void ApplyNowButtonIsDisplayed() {
         BrowserUtils.hoverOver(applyNowButton);
         BrowserUtils.verifyElementDisplayed(applyNowButton, "element is not displayed");
+        BrowserUtils.wait(2);
     }
 
     public void clickApplyNowButton(){

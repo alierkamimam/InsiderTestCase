@@ -1,6 +1,7 @@
 package tests;
 
 import lombok.extern.slf4j.Slf4j;
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import utilities.BrowserUtils;
@@ -24,6 +25,7 @@ public class End2End extends BaseTest {
             form page
      */
     SoftAssert softAssert = new SoftAssert();
+    WebDriver driver;
 
     @Test
     public void insiderWebPageTest() throws IOException {
@@ -44,7 +46,8 @@ public class End2End extends BaseTest {
 
         //Checks Career page is opened or not
         String urlCareersPage = "https://useinsider.com/careers/";
-        String careerPageTitle = "Insider Careers";
+        String careerPageTitle = "Inside Careers";
+
         softAssert.assertEquals(Driver.getDriver().getCurrentUrl(), urlCareersPage);
         softAssert.assertEquals(Driver.getDriver().getTitle(), careerPageTitle);
 
@@ -81,44 +84,39 @@ public class End2End extends BaseTest {
 
         //Scroll up in order to click 'See all teams' button
         BrowserUtils.scrollUp("1000");
-        BrowserUtils.wait(5);
 
         //Clicks 'See all teams' button
         pages.getCAREER_PAGE().clickSeeAllTeamsButton();
-        BrowserUtils.wait(2);
 
         //Scrolls Down in order to see  Quality Assurance section
         BrowserUtils.scrollDown("1600");
-        BrowserUtils.wait(2);
 
         //Clicks 'Quality Assurance' section
         pages.getCAREER_PAGE().clickQualityAssuranceButton();
-        BrowserUtils.wait(2);
 
         //Clicks 'See all QA jobs
         pages.getQUALITY_ASSURANCE_PAGE().clickSeeAllQaJobs();
-        BrowserUtils.wait(2);
+        BrowserUtils.wait(1);
 
         //Filters Location -'Istanbul,Turkey' and department 'Quality Assurance'
         BrowserUtils.scrollDown("600");
         pages.getOPEN_POSITIONS_PAGE().clickFilterByLocationDropDown("Istanbul, Turkey");
         pages.getOPEN_POSITIONS_PAGE().clickFilterByDepartmentDropDown("Quality Assurance");
-        BrowserUtils.wait(5);
 
         //check presence of jobs list
         pages.getOPEN_POSITIONS_PAGE().JobListIsDisplayed();
-        BrowserUtils.wait(3);
+        BrowserUtils.wait(4);
+
         //Checks that all jobs’ Position contains “Quality Assurance”, Department contains
         //“Quality Assurance”, Location contains “Istanbul, Turkey” and “Apply Now” button
         softAssert.assertTrue(pages.getOPEN_POSITIONS_PAGE().verifyElementPositionsText("Quality Assurance"));
         softAssert.assertTrue(pages.getOPEN_POSITIONS_PAGE().verifyElementDepartmentText("Quality Assurance"));
         softAssert.assertTrue(pages.getOPEN_POSITIONS_PAGE().verifyElementLocationText("Istanbul, Turkey"));
         pages.getOPEN_POSITIONS_PAGE().ApplyNowButtonIsDisplayed();
-        BrowserUtils.wait(3);
+
 
         //Clicks “Apply Now” button and switchToTab Lever Application gorm page
         pages.getOPEN_POSITIONS_PAGE().clickApplyNowButton();
-        BrowserUtils.wait(2);
         BrowserUtils.switchToTab("Insider.-Software Quality Assurance Engineer (Remote)");
 
         //Checks that this action redirects us to Lever Application form page
