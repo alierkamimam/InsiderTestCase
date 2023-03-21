@@ -9,7 +9,7 @@ import utilities.ConfigurationReader;
 import utilities.Driver;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
+
 
 @Slf4j
 public class End2End extends BaseTest {
@@ -38,6 +38,7 @@ public class End2End extends BaseTest {
         String message = "One platform for individualized, cross-channel customer experiences";
         String urlHomePage = ConfigurationReader.getProperty("url");
         String title = "#1 Leader in Individualized, Cross-Channel CX — Insider";
+
 
 
         softAssert.assertEquals(pages.getHOME_PAGE().getMessage(), message);
