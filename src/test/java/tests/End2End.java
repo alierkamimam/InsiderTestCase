@@ -9,9 +9,11 @@ import utilities.ConfigurationReader;
 import utilities.Driver;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 @Slf4j
 public class End2End extends BaseTest {
+
     /*
          1. Visit https://useinsider.com/ and check Insider home page is opened or not
          2. Select “More” menu in navigation bar, select “Careers” and check Career page, its
@@ -27,6 +29,7 @@ public class End2End extends BaseTest {
     SoftAssert softAssert = new SoftAssert();
     WebDriver driver;
 
+
     @Test
     public void insiderWebPageTest() throws IOException {
         //Launch browser via @BeforeSuit in BaseTest and Navigate to urlHomePage 'https://useinsider.com/'
@@ -35,6 +38,7 @@ public class End2End extends BaseTest {
         String message = "One platform for individualized, cross-channel customer experiences";
         String urlHomePage = ConfigurationReader.getProperty("url");
         String title = "#1 Leader in Individualized, Cross-Channel CX — Insider";
+
 
         softAssert.assertEquals(pages.getHOME_PAGE().getMessage(), message);
         softAssert.assertEquals(Driver.getDriver().getCurrentUrl(), urlHomePage);
@@ -46,7 +50,7 @@ public class End2End extends BaseTest {
 
         //Checks Career page is opened or not
         String urlCareersPage = "https://useinsider.com/careers/";
-        String careerPageTitle = "Inside Careers";
+        String careerPageTitle = "Insider Careers";
 
         softAssert.assertEquals(Driver.getDriver().getCurrentUrl(), urlCareersPage);
         softAssert.assertEquals(Driver.getDriver().getTitle(), careerPageTitle);
