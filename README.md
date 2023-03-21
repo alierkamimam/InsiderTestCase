@@ -66,3 +66,40 @@ By using TestNG, I have been able to ensure that the software meets the expected
 
 ``Utilities`` - I've created a utils package in my framework, which contains reusable classes like BrowserUtils . These classes provide common functionality that can be used across different parts of the framework, such as interacting with the browser or working with databases. Using these Utilities helps reduce code duplication and improve the efficiency and maintainability of my tests.
 
+## Benefits
+ 1. Easy to maintain:
+
+My framework uses the page object model, which simplifies maintenance. For instance, if I need to update any locator, I only need to make one code change. I also strive to make my tests independent from each other, so if I update one test, it will not impact others, and if one test fails, it will not affect the others.
+
+ 2. Easy to extend:  
+    
+I've implemented the page object model and utilities that can be reused across tests. For instance, I have the "waitForClickablility" method that waits until an element is clickable for a given amount of time before throwing an exception. Instead of repeating these lines of code in multiple tests, I store them as static methods in the BrowserUtils page, making them publicly accessible.
+
+3. Easy to reuse:  
+
+I have page object model, utilities which I can reuse for any tests. For example, I have the "waitForClickablility" method which takes the WebElement and timeout length as parameter an waits until the element is clickable for the givent time before throwing exception. Instead of repeating this lines of codes in the test classes, I have stored them in BrowserUtils page as static methods and they are accessible to public.
+
+4. Multi browser testing:  
+
+My framework can run the same tests on different browsers with minimal code changes.
+
+5. Types of tests:
+
+My framework can test the UI,database and API of the application.
+
+6. Packaging:
+
+I have created different packages for different types of classes and logic. Each page package only contains classes with similar functionality.
+ 
+7. Naming conventions:
+
+I pay close attention to coding standards, especially naming conventions. Classes, methods, and variables are named according to their functionality and follow a standard.
+
+``Page Object Clases``: homePage,LoginPage
+
+``Variable``:loginButton, signOutLink
+
+``methods``:acceptCookies(): this methods only used accept to cookies,not for any other functionality.
+
+# I N S I D E R - W E B -P A G E 
+<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fuseinsider&psig=AOvVaw1w96Wkpqmd-WvVE1R4cmkc&ust=1679502882728000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPiOuve57f0CFQAAAAAdAAAAABAI" width="320" height="180">
